@@ -1,0 +1,27 @@
+{
+  "name": "Cevenquan/chinaumsSDK",
+  "description":  "银联商务PHPSDK",
+  "keywords": [
+    "chinaums"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Cevenquan",
+      "email": "307953305@qq.com",
+      "homepage": "https://github.com/Cevenquan",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.0.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "@stable"
+  },
+  "autoload": {
+    "psr-4": {
+      "Cevenquan\\chinaumsSDK\\": "src/"
+    }
+  }
+}
