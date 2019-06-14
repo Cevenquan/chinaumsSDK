@@ -14,7 +14,7 @@ class UnionClient
     public $requestUrl = 'https://qr-test2.chinaums.com/netpay-portal/webpay/pay.do';
 
     //秘钥
-    public $key = 'fcAmtnx7MwismjWNhNKdHC44mNXtnEQeJkRrhKJwyrW2ysRR';
+    public $key = '';
 
     public $msgSrcId = '3194';
 
