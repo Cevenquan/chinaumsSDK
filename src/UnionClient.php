@@ -14,7 +14,7 @@ class UnionClient
     public $requestUrl = 'https://qr-test2.chinaums.com/netpay-portal/webpay/pay.do';
 
     //秘钥
-    public $key = '';
+    public $key = 'fcAmtnx7MwismjWNhNKdHC44mNXtnEQeJkRrhKJwyrW2ysRR';
 
     public $msgSrcId = '3194';
 
@@ -102,9 +102,12 @@ class UnionClient
      */
     function verify($data)
     {
+
         //返回参数生成sign
         $signType = empty($data['signType']) ? 'md5' : $data['signType'];
+
         $sign = $this->generateSign($data, $signType);
+
         //返回的sign
         $returnSign = $data['sign'];
         if ($returnSign != $sign) {
@@ -112,6 +115,7 @@ class UnionClient
         }
 
         return true;
+
     }
 
     /**
