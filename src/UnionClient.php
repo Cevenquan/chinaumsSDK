@@ -73,7 +73,7 @@ class UnionClient
         //curl模拟请求
 //        var_dump($params_new);
 
-        echo $this->requestUrl.'?'.http_build_query($params_new);
+//        echo $this->requestUrl.'?'.http_build_query($params_new);
         echo " <script   language = 'javascript'  type = 'text/javascript' > ";
         echo " window.location.href = '".$this->requestUrl.'?'.http_build_query($params_new)."' ";
         echo " </script> ";
